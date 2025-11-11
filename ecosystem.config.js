@@ -3,7 +3,7 @@ module.exports = {
   apps: [
     {
       name: 'rpv-conta',
-      script: './src/index.js',
+      script: 'node --watch ./src/index.js',
       instances: 1,
       autorestart: true,
       watch: false,
