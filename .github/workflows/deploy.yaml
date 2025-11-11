@@ -34,13 +34,22 @@ jobs:
           echo "${{ secrets.VPS_KEY }}" > private_key
           chmod 600 private_key
 
-      - name: Enviar arquivos via rsync
+      - name: Deploy via rsync
         run: |
           rsync -avz -e "ssh -i private_key -o StrictHostKeyChecking=no" \
             --exclude='.git' \
             --exclude='node_modules' \
+            --exclude='private_key' \
             . \
             deploy@${{ secrets.VPS_HOST }}:/var/www/rpv-conta/html
+
+      # - name: Enviar arquivos via rsync
+      #   run: |
+      #     rsync -avz -e "ssh -i private_key -o StrictHostKeyChecking=no" \
+      #       --exclude='.git' \
+      #       --exclude='node_modules' \
+      #       . \
+      #       deploy@${{ secrets.VPS_HOST }}:/var/www/rpv-conta/html
 
       # - name: Rodar PM2 na VPS
       #   run: |
