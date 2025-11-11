@@ -26,8 +26,8 @@ jobs:
       - name: Instalar dependências
         run: pnpm install
 
-      - name: Build do projeto
-        run: pnpm run build
+      # - name: Build do projeto
+      #   run: pnpm run build
 
       - name: Criar chave SSH
         run: |
