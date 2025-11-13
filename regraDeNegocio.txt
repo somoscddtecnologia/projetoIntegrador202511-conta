@@ -1,0 +1,22 @@
+Perguntar davi:
+Quanto cada conta vai começar de R$. Tabela de contas vai ser feita como.
+
+O banco aprova automaticamente:
+
+	Solicitar empréstimo: 	(para isso é preciso ter uma conta)
+		O usuário pede ao banco uma quantia de dinheiro, e o banco oferece em media 2 métodos/formas de pagamento, sendo elas: 
+		- Usuário paga 5% de juros pagando na próxima parcela ( no caso haveria apenas uma parcela, quitando assim a divida ) 
+		- Usuário paga 10% dividindo de 2 vezes, ou seja, por exemplo, empréstimo de 10 reais = primeiro mês pagar 5,50 e segundo mês pagar 5,50		
+
+	Agendar parcelas: 
+		rotas para:
+		- Cobrar os clientes que estão devendo 
+		- Ver quem está devendo
+		- Realizar cobrança
+
+	Creditar: 
+		O que precisamos:
+		- Oferecer empréstimo de acordo com o valor que o cliente tem em conta( no máximo oferecer o dobro)
+		- Conta do banco( para relacionar a nossa) 
+		- Valor do banco atual para ser subtraído pelo valor que será creditado na conta do usuario
+		- Conta do usuário para atualizar a "quantidade de dinheiro" 

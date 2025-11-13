@@ -1,0 +1,12 @@
+GET http://localhost:5001/teste
+###
+GET http://localhost:5001/RequererEmprestimo
+###
+GET http://localhost:5001/GetEmprestimos
+###
+POST http://localhost:5001/PayEmprestimosById
+Content-Type: application/json
+
+{
+    "message": "Hello"
+}
