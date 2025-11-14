@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RPB | Cadastro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <main class="hero">
+    <div class="auth-container" style="max-width:560px">
+      <div class="card auth-card">
+        <div class="center"><img src="/Logo.svg" alt="Logo RPB" width="56" height="56"></div>
+        <div class="center">
+          <h1 style="font-size:1.8rem; letter-spacing:-.02em">Criar conta</h1>
+          <p class="hint">Preencha seus dados para cadastrar</p>
+        </div>
+        <form class="col" style="gap: var(--space-4)" onsubmit="return false;">
+          <div class="col">
+            <label for="nome">Nome completo</label>
+            <input id="nome" type="text" placeholder="Seu nome" required>
+          </div>
+          <div class="col">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="voce@exemplo.com" required>
+          </div>
+          <div class="row" style="gap:12px">
+            <div class="col" style="flex:1">
+              <label for="senha">Senha</label>
+              <input id="senha" type="password" placeholder="••••••" required>
+            </div>
+            <div class="col" style="flex:1">
+              <label for="confirmar">Confirmar senha</label>
+              <input id="confirmar" type="password" placeholder="••••••" required>
+            </div>
+          </div>
+          <label class="row" style="gap:8px; align-items:center">
+            <input type="checkbox"> <span class="hint">Aceito os termos de uso</span>
+          </label>
+          <div class="col" style="gap:12px">
+            <a class="btn btn-primary block" href="/">Cadastrar</a>
+            <a class="btn btn-ghost block" href="/">Já tenho conta</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

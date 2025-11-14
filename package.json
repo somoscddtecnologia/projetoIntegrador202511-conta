@@ -1,9 +1,11 @@
 {
   "name": "projetointegrador202511-conta",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Camada Conta - estrutura MVC (views estáticas + assets).",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,8 @@
   "homepage": "https://github.com/somoscddtecnologia/projetoIntegrador202511-conta#readme",
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }

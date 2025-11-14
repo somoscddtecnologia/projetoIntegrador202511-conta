@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RPB | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <main class="hero">
+    <div class="auth-container">
+      <div class="card auth-card">
+        <div class="center"><img src="/Logo.svg" alt="Logo RPB" width="64" height="64"></div>
+        <div class="center">
+          <h1 style="font-size:1.9rem; letter-spacing:-.03em">RPB</h1>
+          <p class="hint">Acesse sua conta</p>
+        </div>
+        <form class="col" style="gap: var(--space-4)" onsubmit="return false;">
+          <div class="col">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="voce@exemplo.com" required>
+          </div>
+          <div class="col">
+            <label for="password">Senha</label>
+            <input id="password" type="password" placeholder="••••••" required>
+          </div>
+          <a class="btn btn-primary block" href="/contas">Entrar</a>
+        </form>
+        <p class="hint">Dica: joao@rpb.com / 123456</p>
+        <p class="hint" style="margin-top:8px">Ainda não tem conta? <a href="/cadastro" style="color:var(--rpb-600); font-weight:600">Cadastre-se</a></p>
+      </div>
+    </div>
+  </main>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
