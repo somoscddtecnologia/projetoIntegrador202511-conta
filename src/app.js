@@ -1,6 +1,9 @@
 const path = require('path');
 const express = require('express');
 const app = express();
+const routes = require("./routes/index")
+app.use(express.json()); 
+app.use(routes)
 
 // Configura pasta de arquivos estáticos (CSS, JS, imagens)
 app.use(express.static(path.join(__dirname, '..', 'public')));
